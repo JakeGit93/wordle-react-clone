@@ -7,3 +7,11 @@ import wordList from './assets/wordle.json'
 //add function for managing attempt number/remaining attempts
 //move GenerateWord component logic into a function in this file
 
+export function GenerateWord(){
+    const randomValue = Math.floor(Math.random() * 2315);
+
+    return(
+        wordList[randomValue]
+    )
+}
+
